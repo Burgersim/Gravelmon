@@ -6,9 +6,9 @@
       "aspects": [
         "school"
      ],
-      "poser": "cobblemon:generation7_seviianwishiwashi",
-      "model": "cobblemon:cutout_gravelmon.geo",
-      "texture": "cobblemon:textures/pokemon/generation7/school_seviianwishiwashi.png",
+      "poser": "cobblemon:generation7_seviianwishiwashi_school",
+      "model": "cobblemon:generation7_seviianwishiwashi_school.geo",
+      "texture": "cobblemon:textures/pokemon/generation7/seviianwishiwashi/seviianwishiwashi_school.png",
       "layers": []
     },
     {
@@ -16,6 +16,6 @@
         "school",
         "shiny"
       ],
-      "texture": "cobblemon:textures/pokemon/generation7/school_seviianwishiwashi_shiny.png"
+      "texture": "cobblemon:textures/pokemon/generation7/seviianwishiwashi/seviianwishiwashi_school_shiny.png"
     }  ]
 }

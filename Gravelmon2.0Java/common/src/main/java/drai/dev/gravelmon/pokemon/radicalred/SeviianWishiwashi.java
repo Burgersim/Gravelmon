@@ -100,5 +100,8 @@ public class SeviianWishiwashi extends Pokemon {
         this.setCanSwim(true);
         this.setAvoidsLand(true);
         this.setCanBreathUnderwater(true);
+        setModeled(true);
+        setBaseScale(0.4);
+        setHitbox(1,1);
     }
 }

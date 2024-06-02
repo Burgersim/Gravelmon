@@ -1,0 +1,63 @@
+{
+  "portraitScale": 0.3,
+  "portraitTranslation": [0.0, 0.0, 0.0],
+  "profileScale": 0.3,
+  "profileTranslation": [0.0, 0.0, 0.0],
+  "animations": {
+    "cry": "q.bedrock_stateful('seviianwishiwashi_school', 'cry')"
+  },
+  "poses": {
+    "ground_standing": {
+      "poseTypes": ["STAND", "PROFILE", "PORTRAIT"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'ground_idle')"
+      ]
+    },
+    "air_standing": {
+      "poseTypes": ["HOVER", "FLOAT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'air_idle')"
+      ]
+    },
+    "water_standing": {
+      "poseTypes": ["HOVER", "FLOAT"],
+      "isSubmergedInWater": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'air_idle')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'ground_walk')"
+      ]
+    },
+    "flying": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'air_fly')"
+      ]
+    },
+    "swimming": {
+      "poseTypes": ["SWIM"],
+      "isSubmergedInWater": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi_school', 'air_fly')"
+      ]
+    },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "animations": [
+        "q.bedrock('seviianwishiwashi_school', 'ground_idle')"
+      ]
+    }
+  }
+}

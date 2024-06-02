@@ -1,20 +1,81 @@
 {
-  "portraitScale": 0.165,
+  "portraitScale": 1.0,
   "portraitTranslation": [0.0, 1.4, 0.0],
-  "profileScale": 0.22,
+  "profileScale": 1.0,
   "profileTranslation": [0.0, 1.55, -20.0],
+  "animations": {
+    "cry": "q.bedrock_stateful('seviianwishiwashi', 'cry')"
+  },
   "poses": {
-    "profile": {
-      "poseName": "profile",
-      "poseTypes": ["PROFILE"],
-      "transformTicks": 10,
-      "animations": ["bedrock(cutout, pc_fix)"]
+    "ground_standing": {
+      "poseTypes": ["STAND"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
     },
-    "portrait": {
-      "poseName": "portrait",
-      "poseTypes": ["NONE","PORTRAIT"],
-      "transformTicks": 10,
-      "animations": ["bedrock(cutout, summary_fix)"]
+    "water_standing": {
+      "poseTypes": ["STAND", "PORTRAIT", "PROFILE", "FLOAT"],
+      "isSubmergedInWater": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'water_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
+    },
+    "air_standing": {
+      "poseTypes": ["FLOAT", "HOVER"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'air_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
+    },
+    "swimming": {
+      "poseTypes": ["SWIM"],
+      "isSubmergedInWater": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'water_swim')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
+    },
+    "flying": {
+      "poseTypes": ["FLY"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'air_fly')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviianwishiwashi', 'blink')"]
+    },
+    "ground_sleeping": {
+      "poseTypes": ["SLEEP"],
+      "isSubmergedInWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'ground_sleep')"
+      ]
+    },
+    "water_sleeping": {
+      "poseTypes": ["SLEEP"],
+      "isSubmergedInWater": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('seviianwishiwashi', 'water_sleep')"
+      ]
     }
   }
 }
